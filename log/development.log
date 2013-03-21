@@ -1,0 +1,1734 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-21 08:13:09 -0400
+Served asset /rails.png - 200 OK (15ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-21 08:36:57 -0400
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:38:02 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 186ms
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:5:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (182.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (155.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20130321123330)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321123330')[0m
+  [1m[35m (200.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-21 08:40:12 -0400
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:40:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (32.1ms)
+Compiled scaffolds.css  (60ms)  (pid 4547)
+Compiled users.css  (1ms)  (pid 4547)
+Compiled application.css  (78ms)  (pid 4547)
+Compiled jquery.js  (2ms)  (pid 4547)
+Compiled jquery_ujs.js  (0ms)  (pid 4547)
+Compiled users.js  (230ms)  (pid 4547)
+Compiled application.js  (278ms)  (pid 4547)
+Completed 200 OK in 706ms (Views: 615.8ms | ActiveRecord: 31.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 08:40:20 -0400
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-21 08:44:15 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (38.5ms)
+  Rendered users/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 118ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:44:15 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:44:15 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:44:15 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-21 08:44:33 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "user"=>{"name"=>"arthur", "email"=>"arthur@focuseddevelopment.net"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (84.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 21 Mar 2013 12:44:33 UTC +00:00], ["email", "arthur@focuseddevelopment.net"], ["name", "arthur"], ["updated_at", Thu, 21 Mar 2013 12:44:33 UTC +00:00]]
+  [1m[35m (185.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 276ms (ActiveRecord: 270.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-03-21 08:44:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:44:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:44:34 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:44:34 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:44:38 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:44:38 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:44:38 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:44:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-03-21 08:45:22 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:45:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at 2013-03-21 08:45:29 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "user"=>{"name"=>"arthur", "email"=>"arthur.poston@focuseddevelopment.net"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "email" = 'arthur.poston@focuseddevelopment.net', "updated_at" = '2013-03-21 12:45:29.281098' WHERE "users"."id" = 1
+  [1m[36m (217.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 225ms (ActiveRecord: 218.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-03-21 08:45:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:29 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:29 -0400
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:45:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:45:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:33 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:45:33 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-03-21 08:45:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:45:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:45:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:41 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:45:41 -0400
+Served asset /users.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:45:42 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-03-21 08:46:12 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:12 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:12 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:46:12 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-21 08:46:29 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "user"=>{"name"=>"karrie", "email"=>"karrie@focuseddevelopment.net"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 21 Mar 2013 12:46:29 UTC +00:00], ["email", "karrie@focuseddevelopment.net"], ["name", "karrie"], ["updated_at", Thu, 21 Mar 2013 12:46:29 UTC +00:00]]
+  [1m[35m (279.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 292ms (ActiveRecord: 282.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-03-21 08:46:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:29 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:29 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:46:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:46:32 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:32 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:46:32 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2013-03-21 08:46:54 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (156.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 161ms (ActiveRecord: 157.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:46:54 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:46:55 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:46:55 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-03-21 08:51:30 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:31 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:31 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:51:34 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:34 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:34 -0400
+Served asset /users.css - 304 Not Modified (45ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-03-21 08:51:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:37 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:37 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:51:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:40 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2013-03-21 08:51:42 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/_form.html.erb (3.4ms)
+  Rendered users/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:42 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:42 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:42 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started PUT "/users/1" for 127.0.0.1 at 2013-03-21 08:51:47 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "user"=>{"name"=>"arthur", "email"=>"arthur@focuseddevelopment.net"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "email" = 'arthur@focuseddevelopment.net', "updated_at" = '2013-03-21 12:51:47.863858' WHERE "users"."id" = 1[0m
+  [1m[35m (229.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 235ms (ActiveRecord: 230.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-03-21 08:51:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:48 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:48 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 08:51:49 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 08:51:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 08:51:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130321123330)
+Migrating to CreateMicropsts (20130321132539)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "micropsts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130321132539')[0m
+  [1m[35m (181.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 09:26:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Compiled micropsts.css  (34ms)  (pid 5095)
+Compiled application.css  (45ms)  (pid 5095)
+Compiled micropsts.js  (93ms)  (pid 5095)
+Compiled application.js  (105ms)  (pid 5095)
+Completed 200 OK in 359ms (Views: 295.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /micropsts.css - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /micropsts.js - 200 OK (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-21 09:26:35 -0400
+Served asset /rails.png - 304 Not Modified (8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 09:26:44 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 87ms (Views: 83.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:44 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:44 -0400
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:26:44 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:44 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:45 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:45 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:26:45 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2013-03-21 09:28:07 -0400
+
+ActionController::RoutingError (No route matches [GET] "/microposts"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/micropost" for 127.0.0.1 at 2013-03-21 09:28:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/micropost"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/users/microposts" for 127.0.0.1 at 2013-03-21 09:28:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"microposts"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "microposts"]]
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=microposts):
+  app/controllers/users_controller.rb:16:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/users/micropost" for 127.0.0.1 at 2013-03-21 09:29:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"micropost"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "micropost"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=micropost):
+  app/controllers/users_controller.rb:16:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 09:32:08 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-21 09:32:09 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /micropsts.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:32:10 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-21 09:32:20 -0400
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2013-03-21 09:32:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/microposts"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Processing by MicropstsController#index as HTML
+  [1m[36mMicropst Load (0.2ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" [0m
+  Rendered micropsts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:33:58 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (9.5ms)
+  Rendered micropsts/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 60ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:39 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"First Micropost", "user_id"=>"1"}, "commit"=>"Create Micropst"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "micropsts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "First Micropost"], ["created_at", Thu, 21 Mar 2013 13:34:59 UTC +00:00], ["updated_at", Thu, 21 Mar 2013 13:34:59 UTC +00:00], ["user_id", 1]]
+  [1m[35m (168.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/micropsts/1
+Completed 302 Found in 183ms (ActiveRecord: 177.4ms)
+
+
+Started GET "/micropsts/1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Processing by MicropstsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropst Load (0.4ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" WHERE "micropsts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered micropsts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:34:59 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Processing by MicropstsController#index as HTML
+  [1m[35mMicropst Load (0.3ms)[0m  SELECT "micropsts".* FROM "micropsts" 
+  Rendered micropsts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:10 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (2.6ms)
+  Rendered micropsts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /micropsts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:15 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:35:29 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"Second Micropost", "user_id"=>"2"}, "commit"=>"Create Micropst"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "micropsts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Second Micropost"], ["created_at", Thu, 21 Mar 2013 13:35:29 UTC +00:00], ["updated_at", Thu, 21 Mar 2013 13:35:29 UTC +00:00], ["user_id", 2]]
+  [1m[36m (227.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/micropsts/2
+Completed 302 Found in 233ms (ActiveRecord: 228.6ms)
+
+
+Started GET "/micropsts/2" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Processing by MicropstsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMicropst Load (0.2ms)[0m  SELECT "micropsts".* FROM "micropsts" WHERE "micropsts"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered micropsts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:30 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Processing by MicropstsController#index as HTML
+  [1m[36mMicropst Load (0.3ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" [0m
+  Rendered micropsts/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:35:34 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:40:00 -0400
+
+SyntaxError (/home/arthur/Documents/rails_projects/demo_app/app/models/micropst.rb:3: syntax error, unexpected tASSOC, expecting ')'
+  validates :content, :length => ( :maximum => 140 )
+                                              ^):
+  app/controllers/micropsts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:40:02 -0400
+Processing by MicropstsController#index as HTML
+  Rendered micropsts/index.html.erb within layouts/application (66.5ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @micropsts.each do |micropst| %>
+    13:   <tr>
+    14:     <td><%= micropst.content %></td>
+    15:     <td><%= micropst.user_id %></td>
+  app/views/micropsts/index.html.erb:12:in `_app_views_micropsts_index_html_erb__267563067591559755_69900697525620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:40:03 -0400
+Processing by MicropstsController#index as HTML
+  Rendered micropsts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @micropsts.each do |micropst| %>
+    13:   <tr>
+    14:     <td><%= micropst.content %></td>
+    15:     <td><%= micropst.user_id %></td>
+  app/views/micropsts/index.html.erb:12:in `_app_views_micropsts_index_html_erb__267563067591559755_69900697525620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:40:04 -0400
+Processing by MicropstsController#index as HTML
+  Rendered micropsts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    9:     <th></th>
+    10:   </tr>
+    11: 
+    12: <% @micropsts.each do |micropst| %>
+    13:   <tr>
+    14:     <td><%= micropst.content %></td>
+    15:     <td><%= micropst.user_id %></td>
+  app/views/micropsts/index.html.erb:12:in `_app_views_micropsts_index_html_erb__267563067591559755_69900697525620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:40:29 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (1.0ms)
+  Rendered micropsts/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@micropst) do |f| %>
+    2:   <% if @micropst.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@micropst.errors.count, "error") %> prohibited this micropst from being saved:</h2>
+  app/views/micropsts/_form.html.erb:1:in `_app_views_micropsts__form_html_erb___218590739022976282_69900697727080'
+  app/views/micropsts/new.html.erb:3:in `_app_views_micropsts_new_html_erb__2313783242490255050_21219260'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:41:48 -0400
+
+SyntaxError (/home/arthur/Documents/rails_projects/demo_app/app/models/micropst.rb:3: syntax error, unexpected tASSOC, expecting ')'
+  validates :content, :length => ( :maximum => 140 )
+                                              ^):
+  app/controllers/micropsts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:43:23 -0400
+Processing by MicropstsController#index as HTML
+  [1m[36mMicropst Load (0.2ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" [0m
+  Rendered micropsts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 147ms (Views: 51.6ms | ActiveRecord: 2.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:51:21 -0400
+
+SyntaxError (/home/arthur/Documents/rails_projects/demo_app/app/models/micropst.rb:3: syntax error, unexpected tASSOC, expecting ')'
+  validates :content, :length => ( :maximum => 140 )
+                                              ^):
+  app/controllers/micropsts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.8ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Processing by MicropstsController#index as HTML
+  [1m[36mMicropst Load (0.2ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" [0m
+  Rendered micropsts/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 146ms (Views: 81.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /micropsts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /micropsts.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:30 -0400
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (8.4ms)
+  Rendered micropsts/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 52ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:53:37 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:54:06 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"k;djfksajgs;dlgkjds;kflgjd;klfgjsdklf;jgmskl;zmv,xmcvkld;sfjgskfjgm;lfmgkljxzfmgklfjgasdklfjgxmv;lzkxmfgkljasdf;klgjsklf;gj,vmdklsfgsak;fljg;klsdjfgksmdf;dklfjg;ksljfgklasj;ghashgkljsfkg;sgjkjl;ksjvlk;ashfgkasjffsahglha;nv.sfhgfnv/.,jsflghs;gha;slfghlashg;", "user_id"=>"-1"}, "commit"=>"Create Micropst"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: content, user_id):
+  app/controllers/micropsts_controller.rb:43:in `new'
+  app/controllers/micropsts_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:54:26 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"k;djfksajgs;dlgkjds;kflgjd;klfgjsdklf;jgmskl;zmv,xmcvkld;sfjgskfjgm;lfmgkljxzfmgklfjgasdklfjgxmv;lzkxmfgkljasdf;klgjsklf;gj,vmdklsfgsak;fljg;klsdjfgksmdf;dklfjg;ksljfgklasj;ghashgkljsfkg;sgjkjl;ksjvlk;ashfgkasjffsahglha;nv.sfhgfnv/.,jsflghs;gha;slfghlashg;", "user_id"=>"1"}, "commit"=>"Create Micropst"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: content, user_id):
+  app/controllers/micropsts_controller.rb:43:in `new'
+  app/controllers/micropsts_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:54:58 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"", "user_id"=>"1"}, "commit"=>"Create Micropst"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: content, user_id):
+  app/controllers/micropsts_controller.rb:43:in `new'
+  app/controllers/micropsts_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:55:21 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"Hello", "user_id"=>"1"}, "commit"=>"Create Micropst"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: content, user_id):
+  app/controllers/micropsts_controller.rb:43:in `new'
+  app/controllers/micropsts_controller.rb:43:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (3.4ms)
+  Rendered micropsts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 91ms (Views: 76.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:47 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (4.8ms)
+  Rendered micropsts/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:55:49 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:56:01 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"Hello", "user_id"=>"1"}, "commit"=>"Create Micropst"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.5ms)[0m  [1mINSERT INTO "micropsts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Hello"], ["created_at", Thu, 21 Mar 2013 13:56:01 UTC +00:00], ["updated_at", Thu, 21 Mar 2013 13:56:01 UTC +00:00], ["user_id", 1]]
+  [1m[35m (236.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/micropsts/3
+Completed 302 Found in 251ms (ActiveRecord: 243.5ms)
+
+
+Started GET "/micropsts/3" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Processing by MicropstsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMicropst Load (0.4ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" WHERE "micropsts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered micropsts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 81ms (Views: 76.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:02 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Processing by MicropstsController#index as HTML
+  [1m[35mMicropst Load (0.3ms)[0m  SELECT "micropsts".* FROM "micropsts" 
+  Rendered micropsts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:05 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/micropsts/new" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Processing by MicropstsController#new as HTML
+  Rendered micropsts/_form.html.erb (2.7ms)
+  Rendered micropsts/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /micropsts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:56:07 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/micropsts" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Processing by MicropstsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWjHyLi+3hCygAKTDyhKszSQnfchqehhTc4Od5pssBA=", "micropst"=>{"content"=>"My thoughts on creating such a simple blog post as this should be a very exciting one as it is for me. I hope to be developing in Ruby strongly very soon.", "user_id"=>"1"}, "commit"=>"Create Micropst"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered micropsts/_form.html.erb (3.4ms)
+  Rendered micropsts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 81ms (Views: 76.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:09 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/micropsts" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Processing by MicropstsController#index as HTML
+  [1m[36mMicropst Load (0.3ms)[0m  [1mSELECT "micropsts".* FROM "micropsts" [0m
+  Rendered micropsts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/micropsts.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /micropsts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/micropsts.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /micropsts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-21 09:57:16 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
